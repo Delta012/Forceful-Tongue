@@ -1,23 +1,25 @@
 Scriptname MQpathtoHHShrineEffectScript extends ActiveMagicEffect  
 
-quest property dunMasterQST auto
-message property MQpathToHHShrineBlessingText auto
+Quest Property dunMasterQST Auto
+Message Property MQpathToHHShrineBlessingText Auto
 
-EVENT OnEffectStart(Actor akTarget, Actor akCaster)
-	MQpathToHHShrineBlessingText.show()
-endEVENT
+Event OnEffectStart(Actor akTarget, Actor akCaster)
+	MQpathToHHShrineBlessingText.Show()
+EndEvent
 	
-EVENT OnEffectFinish(Actor akTarget, Actor akCaster)
+Event OnEffectFinish(Actor akTarget, Actor akCaster)
+
 	dunMasterQSTscript QuestScript = dunMasterQST as dunMasterQSTscript
-	questScript.HHshrine01 = FALSE
-	questScript.HHshrine02 = FALSE
-	questScript.HHshrine03 = FALSE
-	questScript.HHshrine04 = FALSE
-	questScript.HHshrine05 = FALSE
-	questScript.HHshrine06 = FALSE
-	questScript.HHshrine07 = FALSE
-	questScript.HHshrine08 = FALSE
-	questScript.HHshrine09 = FALSE
-	questScript.HHshrine10 = FALSE
-endEVENT
+	questScript.HHshrine01 = False
+	questScript.HHshrine02 = False
+	questScript.HHshrine03 = False
+	questScript.HHshrine04 = False
+	questScript.HHshrine05 = False
+	questScript.HHshrine06 = False
+	questScript.HHshrine07 = False
+	questScript.HHshrine08 = False
+	questScript.HHshrine09 = False
+	questScript.HHshrine10 = False
+	
+EndEvent 
 
